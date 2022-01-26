@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ceeses.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<header>
+    <div class="header__item">
+        <div class="banner">
+            <span class="banner__title">
+                Könyvespolc
+            </span>
+        </div>
+    </div>
+    <div class="header__item">
+        <nav class="menu-bar">
+            <a class="menu-bar__item" href="javascript:showNew()">Új könyv</a>
+            <a class="menu-bar__item" href="javascript:showList()">Könyveim</a>
+        </nav>
+    <h1 id="cim"></h1>
+    </div>
+
+</header>
+<body>
+    <div class="lista">
+        <section id="konyvek">
+            <h1>Itt találhatók az eddig feltöltött olvasmányok</h1>
+            <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">Cím</th>
+                <th scope="col">Előrehaladás</th>
+                <th scope="col">Teljes szöveg</th>
+                <th scope="col">Betöltés</th>
+                <th scope="col">Törlés</th>
+                </tr>
+            </thead>
+            <tbody id="listazo">
+            </tbody>
+            </table>
+
+        </section>
+
+
+        <section id="uj">
+            <h1>Új könyv</h1>
+            <form name ="upload"  >
+            <label for="name">Cím:</label><br>
+            <input type="text" id="name"><br>
+            <label for="lname">Fájl:</label><br>
+            <input id="getFile" type="file" onchange="readFile(this)">
+            <br>
+            <div class="OkGomb">
+                <button  id="okeGomb" type="submit">OK</button>
+            </div>
+            </form>
+        </section>
+    </div>
+
+    <section id="olvaso">
+        <div class="settings">
+            <p id="fontSize">Betűméret: 50</p>
+            <div class="slidecontainer">
+                <input type="range" min="20" max="150" value="50" class="slider" id="myRange">
+            </div>
+
+            <p id="speed">Sebesség: 60 szó percenként</p>
+            <div class="slidecontainer2">
+                <input type="range" min="200" max="1500" value="1000" class="slider2" id="myRange2">
+            </div>
+
+            <div class="szoveg" id="demo"></div>
+            <div class="gombok">
+                <input id="gomb back" type="image" src="media/back.png" style="min-height: 40px";/>
+                <input id="gomb start" type="image" src="media/play.png" style="min-height: 40px";/>
+                <input id="gomb front" type="image" src="media/next.png" style="min-height: 40px";  />
+            </div>            
+        </div>
+    </section>
+
+    <section id="teljes">
+        <div class="text" id="teljeski"></div>
+    </section>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/epubjs/dist/epub.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/1.8.349/pdf.min.js'></script>
+<script src="javascript.js"></script>
+</html>
+

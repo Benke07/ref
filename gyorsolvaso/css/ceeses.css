@@ -1,0 +1,143 @@
+body{
+
+    color: black;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #FFFFF2;
+
+}
+html {
+    font-family: 'Raleway', sans-serif;
+    background-color: #FFFFF2;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    background-color: #FFE19C;
+    width: 100%;
+    height: 5rem;
+    box-shadow: 0 0.2rem 0.5rem #00000005;
+}
+.banner {
+    display: block;
+    width: fit-content;
+    height: 100%;
+    padding: 0 1rem 0 1rem;
+
+    color: inherit;
+    font-size: 2rem;
+    user-select: none;
+
+    color: #000000bb;
+    text-decoration: none;
+
+    transition: color 100ms;
+}
+
+.banner:hover {
+    color: #000000ff;
+}
+
+.banner__title {
+    line-height: 5rem;
+    font-weight: 400;
+}
+
+.szoveg {
+    display:table !important;
+    font-family: 'Raleway', sans-serif;
+    width:100%;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #FFFFF2;
+    color: black;
+
+}
+.settings{
+    background-color: #FFFFF2;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.gombok{
+    margin-top: 5%;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.slider-rect-value{
+    fill: #006EE3;
+    stroke: none;
+}
+.slider:hover{
+    cursor: pointer;
+}
+.slider2:hover{
+    cursor: pointer;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 100%;
+    margin: 0 1rem 0 1rem;
+    
+}
+
+.menu-bar__item {
+    display: block;
+    height: 100%;
+    padding: 0 1rem 0 1rem;
+
+    text-align: center;
+    text-decoration: none;
+    line-height: 5rem;
+    font-size: 1.2rem;
+    color: #000000bb;
+
+    transition: color 100ms;
+}
+
+.menu-bar__item:hover {
+    color: #000000;
+}
+
+.lista{
+    background-color: #FFFFF2;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: 'Raleway', sans-serif;
+    color: #000000bb;
+    padding-top: 90px;
+}
+.OkGomb{
+    margin-top: 5px;
+    margin-left: 0;
+}
+.text{
+    text-align: justify;
+    background-color: #FFFFF2;
+    padding: 5%
+}
+.text a{
+    color: black;
+    text-decoration:none;
+}
+.text a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+
+#itt {
+    scroll-margin-top: 100px;
+  }
