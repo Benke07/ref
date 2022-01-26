@@ -1,0 +1,13 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <div class="fadeIn first">
+      <h1>HP-API</h1>
+    </div>
+    <form>
+      <input type="text" class="fadeIn second" [formControl]="ID" placeholder="ID">
+      <input type="password" class="fadeIn third" [formControl]="Pass" placeholder="Password">
+      <input type="submit" class="btn btn-secondary" type="submit" (click)="onCheck()" value="Log In" >
+    </form>
+  </div>
+</div>
+

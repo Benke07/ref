@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-center">
+</div>
+<table class="table table-striped" id='tab'>
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Hogwarts house</th>
+      <th scope="col">Birthday</th>
+      <th scope="col">Patronus</th>
+      <th scope="col">Modify</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let e of li;let i = index" [attr.data-index]="i">
+      <td>{{ e['name'] }}</td>
+      <td *ngIf="e['house'] != ''">{{ e['house'] }}</td>
+      <td *ngIf="e['house'] == ''">Unknown</td>
+      <td *ngIf="e['dateOfBirth'] != ''">{{ e['dateOfBirth'] }}</td>
+      <td *ngIf="e['dateOfBirth'] == ''">Unknown</td>
+      <td *ngIf="e['patronus'] != ''">{{ e['patronus'] }}</td>
+      <td *ngIf="e['patronus'] == ''">Unknown</td>
+      <td><button class="btn btn-outline-success" (click)="onModify(i)">Modify</button></td>
+      <td><button class="btn btn-outline-danger" (click)="onDelete(i)">Delete</button></td>
+    </tr>
+  </tbody>
+</table>

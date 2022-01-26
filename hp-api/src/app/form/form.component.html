@@ -1,0 +1,37 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <div class="fadeIn first">
+      <h1 *ngIf="characterID || characterID === 0" >Modify Character</h1>
+      <h1 *ngIf="!characterID && characterID !== 0">New Character</h1>
+    </div>
+      <form [formGroup]="editor" (ngSubmit)="onSubmit()">
+
+        <label>
+          Name:
+          <input *ngIf="characterID"  type="text" formControlName="name">
+          <input *ngIf="!characterID"  type="text"  formControlName="name">
+        </label>
+        <br>
+        <label>
+          House:
+          <input *ngIf="characterID" type="text" formControlName="house">
+          <input *ngIf="!characterID" type="text" formControlName="house">
+        </label>
+        <br>
+        <label>
+          Birthday:
+          <br>
+          <input *ngIf="characterID" type="date" formControlName="birthday">
+          <input *ngIf="!characterID" type="date" formControlName="birthday">
+        </label>
+        <br>
+        <label>
+          Patronus:
+          <input *ngIf="characterID" type="text" formControlName="patronus">
+          <input *ngIf="!characterID" type="text" formControlName="patronus">
+        </label><br>
+
+        <button class="btn btn-secondary" type="submit" [disabled]="!editor.valid">Submit</button>
+      </form>
+  </div>
+</div>

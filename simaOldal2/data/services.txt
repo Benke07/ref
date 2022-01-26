@@ -1,0 +1,9 @@
+Alfa csomag;Nulla imperdiet et orci in vehicula. Sed tincidunt imperdiet augue a pellentesque.;15 000
+Béta csomag;Beta imperdiet et orci in vehicula.;30 000
+Gamma csomag;Gamma imperdiet et orci in vehicula;50 000
+Delta csomag;Delta imperdiet et orci in vehicula;66 000
+Alfa csomag;Nulla imperdiet et orci in vehicula. Sed tincidunt imperdiet augue a pellentesque.;15 000
+Béta csomag;Beta imperdiet et orci in vehicula.;30 000
+Gamma csomag;Gamma imperdiet et orci in vehicula;50 000
+Delta csomag;Delta imperdiet et orci in vehicula;66 000
+Legújabb csomag;Új imperdiet et orci in vehicula;75 000
